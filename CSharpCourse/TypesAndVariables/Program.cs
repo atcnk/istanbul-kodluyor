@@ -21,10 +21,11 @@ namespace TypesAndVariables
             char character = 'C';   // 8-bit
             float numberFloat = 10.3F;  // 32-bit
             double numberDouble = 10.4D;    // 64-bit
+            decimal numberDecimal = 10.412312412323M;   // 128-bit
 
             Console.WriteLine("Numbers are: {0} | {1} | {2} | {3}", numberByte, numberShort, numberInt, numberLong);
             Console.WriteLine("Char is: {0} and its ASCII number is: {1}", character, (int)character);
-            Console.WriteLine("Fractional numbers are: {0} | {1}", numberFloat, numberDouble);
+            Console.WriteLine("Fractional numbers are: {0} | {1} | {2}", numberFloat, numberDouble, numberDecimal);
             Console.ReadLine();
         }
     }
