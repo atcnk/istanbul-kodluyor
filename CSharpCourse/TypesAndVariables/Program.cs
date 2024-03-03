@@ -18,8 +18,10 @@ namespace TypesAndVariables
             long numberLong = -214783648;   // 64-bit
 
             bool condition = false;
+            char character = 'C';
 
             Console.WriteLine("Numbers are: {0} | {1} | {2} | {3}", numberByte, numberShort, numberInt, numberLong);
+            Console.WriteLine("Char is: {0} and its ASCII number is: {1}", character, (int)character);
             Console.ReadLine();
         }
     }
