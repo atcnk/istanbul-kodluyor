@@ -16,6 +16,7 @@ namespace TypesAndVariables
             short numberShort = 32767;  // 16-bit
             int numberInt = 2147483647;   // 32-bit
             long numberLong = -214783648;   // 64-bit
+            var numberVar = 2111111111;
 
             bool condition = false; // 8-bit
             char character = 'C';   // 8-bit
