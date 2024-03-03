@@ -1,0 +1,7 @@
+C:\docs\istanbul_kodluyor\istanbul-kodluyor\CSharpCourse\TypesAndVariables\bin\Debug\TypesAndVariables.exe.config
+C:\docs\istanbul_kodluyor\istanbul-kodluyor\CSharpCourse\TypesAndVariables\bin\Debug\TypesAndVariables.exe
+C:\docs\istanbul_kodluyor\istanbul-kodluyor\CSharpCourse\TypesAndVariables\bin\Debug\TypesAndVariables.pdb
+C:\docs\istanbul_kodluyor\istanbul-kodluyor\CSharpCourse\TypesAndVariables\obj\Debug\TypesAndVariables.csproj.AssemblyReference.cache
+C:\docs\istanbul_kodluyor\istanbul-kodluyor\CSharpCourse\TypesAndVariables\obj\Debug\TypesAndVariables.csproj.CoreCompileInputs.cache
+C:\docs\istanbul_kodluyor\istanbul-kodluyor\CSharpCourse\TypesAndVariables\obj\Debug\TypesAndVariables.exe
+C:\docs\istanbul_kodluyor\istanbul-kodluyor\CSharpCourse\TypesAndVariables\obj\Debug\TypesAndVariables.pdb
