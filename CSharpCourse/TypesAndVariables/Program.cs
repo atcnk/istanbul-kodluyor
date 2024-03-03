@@ -12,9 +12,10 @@ namespace TypesAndVariables
         private static void Main(string[] args)
         {
             // Console.WriteLine("Hello World!");
-            int number1 = 2147483647;
+            int number1 = 2147483647;   // 32 bit
+            long number2 = -214783648;   // 64 bit
 
-            Console.WriteLine("First number is: {0}", number1);
+            Console.WriteLine("Numbers are: {0} and {1}", number1, number2);
             Console.ReadLine();
         }
     }
