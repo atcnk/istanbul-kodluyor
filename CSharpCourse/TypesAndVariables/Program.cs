@@ -23,10 +23,18 @@ namespace TypesAndVariables
             double numberDouble = 10.4D;    // 64-bit
             decimal numberDecimal = 10.412312412323M;   // 128-bit
 
+            Days today = Days.Monday;
+
             Console.WriteLine("Numbers are: {0} | {1} | {2} | {3}", numberByte, numberShort, numberInt, numberLong);
             Console.WriteLine("Char is: {0} and its ASCII number is: {1}", character, (int)character);
             Console.WriteLine("Fractional numbers are: {0} | {1} | {2}", numberFloat, numberDouble, numberDecimal);
+            Console.WriteLine("Today is: {0} and it is {1}. day of the week", today, (int)today);
             Console.ReadLine();
+        }
+
+        enum Days
+        {
+            Monday= 1, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
         }
     }
 }
