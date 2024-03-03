@@ -17,11 +17,14 @@ namespace TypesAndVariables
             int numberInt = 2147483647;   // 32-bit
             long numberLong = -214783648;   // 64-bit
 
-            bool condition = false;
-            char character = 'C';
+            bool condition = false; // 8-bit
+            char character = 'C';   // 8-bit
+            float numberFloat = 10.3F;  // 32-bit
+            double numberDouble = 10.4D;    // 64-bit
 
             Console.WriteLine("Numbers are: {0} | {1} | {2} | {3}", numberByte, numberShort, numberInt, numberLong);
             Console.WriteLine("Char is: {0} and its ASCII number is: {1}", character, (int)character);
+            Console.WriteLine("Fractional numbers are: {0} | {1}", numberFloat, numberDouble);
             Console.ReadLine();
         }
     }
