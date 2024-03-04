@@ -21,6 +21,8 @@ namespace Conditionals
                 Console.WriteLine("Number is not 0");
             }
 
+            Console.WriteLine(number == 0 ? "Number is 0" : "Number is not 0");
+
             Console.ReadLine();
         }
     }
