@@ -40,18 +40,32 @@ namespace Conditionals
 
             //Console.WriteLine(number == 0 ? "Number is 0" : "Number is not 0");
 
-            if (number >= 0 && number <= 100)
+            //if (number >= 0 && number <= 100)
+            //{
+            //    Console.WriteLine("Number is between 0-100");
+            //}
+            //else if (number > 100 && number <= 200)
+            //{
+            //    Console.WriteLine("Number is between 101-200");
+            //}
+            //else if (number > 200 || number < 0)
+            //{
+            //    Console.WriteLine();
+            //}
+
+            if (number < 100)
             {
-                Console.WriteLine("Number is between 0-100");
+                if (number > 90)
+                {
+
+                }
+                else
+                {
+
+                }
             }
-            else if (number > 100 && number <= 200)
-            {
-                Console.WriteLine("Number is between 101-200");
-            }
-            else if (number > 200 || number < 0)
-            {
-                Console.WriteLine();
-            }
+
+
 
             Console.ReadLine();
         }
