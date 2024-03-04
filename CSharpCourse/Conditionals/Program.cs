@@ -12,17 +12,30 @@ namespace Conditionals
         {
             var number = 1;
 
-            if (number == 0)
+            //if (number == 0)
+            //{
+            //    Console.WriteLine("Number is 0");
+            //}
+            //else if (number == 1)
+            //{
+            //    Console.WriteLine("Number is 1");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Number is not 0 or 1");
+            //}
+
+            switch (number)
             {
-                Console.WriteLine("Number is 0");
-            }
-            else if (number == 1)
-            {
-                Console.WriteLine("Number is 1");
-            }
-            else
-            {
-                Console.WriteLine("Number is not 0 or 1");
+                case 0:
+                    Console.WriteLine("Number is 0");
+                    break;
+                case 1:
+                    Console.WriteLine("Number is 1");
+                    break;
+                default:
+                    Console.WriteLine("Number is not 0 or 1");
+                    break;
             }
 
             //Console.WriteLine(number == 0 ? "Number is 0" : "Number is not 0");
