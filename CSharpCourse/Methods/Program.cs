@@ -16,10 +16,10 @@ namespace Methods
             Add();
             var result = Add2();
 
-            int number1 = 20;
+            int number1;
             int number2 = 100;
 
-            var result2 = Add3(ref number1, number2);
+            var result2 = Add3(out number1, number2);
 
             Console.WriteLine("result: {0}", result2);
             Console.WriteLine("number1: {0}", number1);
@@ -36,7 +36,7 @@ namespace Methods
             return number1 + number2;
         }
 
-        static int Add3(ref int number1, int number2)
+        static int Add3(out int number1, int number2)
         {
             number1 = 30;
             return (number1 + number2);
