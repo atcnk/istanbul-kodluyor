@@ -1,7 +1,0 @@
-C:\docs\istanbul_kodluyor\istanbul-kodluyor\CSharpCourse\Methods\bin\Debug\Methods.exe.config
-C:\docs\istanbul_kodluyor\istanbul-kodluyor\CSharpCourse\Methods\bin\Debug\Methods.exe
-C:\docs\istanbul_kodluyor\istanbul-kodluyor\CSharpCourse\Methods\bin\Debug\Methods.pdb
-C:\docs\istanbul_kodluyor\istanbul-kodluyor\CSharpCourse\Methods\obj\Debug\Methods.csproj.AssemblyReference.cache
-C:\docs\istanbul_kodluyor\istanbul-kodluyor\CSharpCourse\Methods\obj\Debug\Methods.csproj.CoreCompileInputs.cache
-C:\docs\istanbul_kodluyor\istanbul-kodluyor\CSharpCourse\Methods\obj\Debug\Methods.exe
-C:\docs\istanbul_kodluyor\istanbul-kodluyor\CSharpCourse\Methods\obj\Debug\Methods.pdb

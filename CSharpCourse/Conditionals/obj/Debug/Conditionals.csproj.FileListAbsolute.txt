@@ -1,7 +1,0 @@
-C:\docs\istanbul_kodluyor\istanbul-kodluyor\CSharpCourse\Conditionals\bin\Debug\Conditionals.exe.config
-C:\docs\istanbul_kodluyor\istanbul-kodluyor\CSharpCourse\Conditionals\bin\Debug\Conditionals.exe
-C:\docs\istanbul_kodluyor\istanbul-kodluyor\CSharpCourse\Conditionals\bin\Debug\Conditionals.pdb
-C:\docs\istanbul_kodluyor\istanbul-kodluyor\CSharpCourse\Conditionals\obj\Debug\Conditionals.csproj.AssemblyReference.cache
-C:\docs\istanbul_kodluyor\istanbul-kodluyor\CSharpCourse\Conditionals\obj\Debug\Conditionals.csproj.CoreCompileInputs.cache
-C:\docs\istanbul_kodluyor\istanbul-kodluyor\CSharpCourse\Conditionals\obj\Debug\Conditionals.exe
-C:\docs\istanbul_kodluyor\istanbul-kodluyor\CSharpCourse\Conditionals\obj\Debug\Conditionals.pdb
