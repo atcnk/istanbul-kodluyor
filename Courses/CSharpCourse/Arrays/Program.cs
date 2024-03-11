@@ -22,6 +22,25 @@ namespace Arrays
                 Console.WriteLine(student);
             }
 
+            string[,] regions = new string[5, 3]
+            {
+                {"istanbul", "izmit", "balikesir" },
+                {"ankara", "konya", "kirikkale" },
+                {"antalya", "adana", "mersin"},
+                {"rize", "trabzon", "samsun" },
+                {"izmir", "mugla", "manisa" }
+            };
+
+            for (int i = 0; i <= regions.GetUpperBound(0); i++)
+            {
+                for (int j = 0; j <= regions.GetUpperBound(1); j++)
+                {
+                    Console.WriteLine(regions[i, j]);
+                }
+
+                Console.WriteLine("********");
+            }
+
             Console.WriteLine();
             Console.ReadLine();
         }
