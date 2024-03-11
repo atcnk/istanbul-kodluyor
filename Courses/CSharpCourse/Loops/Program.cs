@@ -12,6 +12,19 @@ namespace Loops
         {
             //ForLoop();
             //WhileLoop();
+            //DoWhileLoop();
+
+            string[] students = new string[3] { "Atacan", "Mert", "Baris" };
+            foreach (var student in students)
+            {
+                Console.WriteLine(student);
+            }
+
+            Console.ReadLine();
+        }
+
+        private static void DoWhileLoop()
+        {
             int number = 10;
 
             do
@@ -19,9 +32,6 @@ namespace Loops
                 Console.WriteLine(number);
                 number--;
             } while (number >= 11);
-            
-
-            Console.ReadLine();
         }
 
         private static void WhileLoop()
