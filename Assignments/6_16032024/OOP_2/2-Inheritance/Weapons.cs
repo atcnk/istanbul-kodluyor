@@ -1,4 +1,8 @@
-﻿namespace OOP_2._2_Inheritance;
+﻿/* Temel silah ozelliklerini base class uzerinde tanimladik
+ * Base classi miras alan diger silahlar spesifik ozelliklerini kendi uzerinde tanimladi
+ */
+
+namespace OOP_2._2_Inheritance;
 
 public class Weapon
 {

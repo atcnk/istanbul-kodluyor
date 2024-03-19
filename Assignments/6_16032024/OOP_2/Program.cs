@@ -5,7 +5,9 @@ using OOP_2._5_Encapsulation;
 
 PolymorphismWithVirtualOverride();
 PolymorphismWithAbstractClass();
-InheritanceExample1();
+Inheritance();
+TransitiveInheritance();
+InheritanceShapes();
 GenericTypeExample();
 EncapsulationExample();
 
@@ -37,7 +39,7 @@ static void PolymorphismWithAbstractClass()
     Console.WriteLine("Bunun yaninda kahve ogutmek ortak bir eylem oldugu icin o metodu override etmedik, direkt abstract class'ta icini doldurduk.");
 }
 
-static void InheritanceExample1()
+static void Inheritance()
 {
     Bow bow = new Bow();
     bow.Name = "Steel Bow";
@@ -55,6 +57,36 @@ static void InheritanceExample1()
     fireStaff.Durability = 100;
     fireStaff.Weight = 125;
     fireStaff.BurnDamage = 3;
+}
+
+static void InheritanceShapes()
+{
+    Square square = new Square(5d);
+    Rectangle rectangle = new Rectangle(3d, 3d);
+    Circle circle = new Circle(10d);
+
+    square.LogPerimeter();
+    square.LogArea();
+    rectangle.LogPerimeter();
+    rectangle.LogArea();
+    rectangle.LogIsSquare();
+    circle.LogPerimeter();
+    circle.LogArea();}
+
+static void TransitiveInheritance()
+{
+    A a = new A();
+    B b = new B();
+    C c = new C();
+
+    a.FirstMethod();
+    b.FirstMethod();
+    c.FirstMethod();
+
+    b.SecondMethod();
+    c.SecondMethod();
+
+    c.ThirdMethod();
 }
 
 static void GenericTypeExample()
@@ -85,4 +117,3 @@ static void EncapsulationExample()
 
     Console.WriteLine("Oyuncu 16 cani varken 21 hasar aldi ama cani eksiye degil 0'a dustu.");
 }
-
