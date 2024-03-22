@@ -1,7 +1,7 @@
 ﻿using ConsoleUI;
 
-int number = 0;
-string text = "Merhaba";
+//int number = 0;
+//string text = "Merhaba";
 
 // OOP => gercek hayattaki nesneyi bilgisayara tanitmak
 
@@ -25,3 +25,10 @@ user.LastName = "Deneme";
 
 // OOP Concepts -> Constructor, Access Modifiers, Inheritance, Polymorphism.,
 // Abstraction, Interface
+
+string text = Console.ReadLine();
+Console.WriteLine(text);
+
+// client -> request -> server
+// server -> response -> client
+// 
