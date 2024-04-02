@@ -1,11 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Entities;
-using Business.Abstracts;
+﻿using Business.Abstracts;
 using Business.Concretes;
+using Entities;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 
 namespace WebAPI.Controllers
 {
-    // api/products diye bir istek gelirse products controller devreye girecek demis oluyoruz 
     [Route("api/[controller]")]
     [ApiController]
     public class ProductsController : ControllerBase
@@ -14,13 +14,13 @@ namespace WebAPI.Controllers
 
         public ProductsController(IProductService productService)
         {
-            this._productService = productService;
+            _productService = productService;
         }
 
         [HttpGet]
-        public List<Product> GetAll()
+        public async Task<List<Product>> GetAll()
         {
-            return _productService.GetAll();
+            return await _productService.GetAll();
         }
 
         [HttpPost]
@@ -28,5 +28,20 @@ namespace WebAPI.Controllers
         {
             _productService.Add(product);
         }
+
+        [HttpGet("Senkron")]
+        public string Sync()
+        {
+            Thread.Sleep(5000); // 5 saniye beklet.
+            return "Sync endpoint";
+        }
+
+        [HttpGet("Asenkron")]
+        public async Task<string> Async()
+        {
+            await Task.Delay(5000);
+            return "Async endpoint";
+        }
     }
 }
+// SOLID => S => SINGLE RESPONSIBILITY
