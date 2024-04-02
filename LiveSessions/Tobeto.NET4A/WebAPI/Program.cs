@@ -19,8 +19,8 @@ builder.Services.AddSwaggerGen();
 
 // scoped => (api istegi) istek basina 1 instance olusturur.
 // trasient => her adimda (her talepte) yeni bir instance
-builder.Services.AddSingleton<IProductService, ProductManager>();
-builder.Services.AddSingleton<IProductRepository, EfProductRepository>();
+builder.Services.AddScoped<IProductService, ProductManager>();
+builder.Services.AddScoped<IProductRepository, EfProductRepository>();
 builder.Services.AddDbContext<BaseDbContext>();
 
 var app = builder.Build();
