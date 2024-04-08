@@ -1,8 +1,5 @@
-using Business.Abstracts;
-using Business.Concretes;
-using DataAccess.Abstracts;
-using DataAccess.Concretes.EntityFramework;
-using Core.CrossCuttingConcerns.Exceptions;
+using Business;
+using DataAccess;
 using Core.CrossCuttingConcerns.Exceptions.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -20,9 +17,9 @@ builder.Services.AddSwaggerGen();
 
 // scoped => (api istegi) istek basina 1 instance olusturur.
 // trasient => her adimda (her talepte) yeni bir instance
-builder.Services.AddScoped<IProductService, ProductManager>();
-builder.Services.AddScoped<IProductRepository, EfProductRepository>();
-builder.Services.AddDbContext<BaseDbContext>();
+
+builder.Services.AddBusinessServices();
+builder.Services.AddDataAccessServices();
 
 var app = builder.Build();
 
