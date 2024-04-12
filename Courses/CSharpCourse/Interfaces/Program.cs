@@ -19,8 +19,20 @@ namespace Interfaces
             //};
             //personManager.Add(customer);
 
-            CustomerManager customerManager = new CustomerManager();
-            customerManager.Add(new OracleCustomerDal());
+            //CustomerManager customerManager = new CustomerManager();
+            //customerManager.Add(new OracleCustomerDal());
+
+            ICustomerDal[] customerDals = new ICustomerDal[2]
+            {
+                new SqlServerCustomerDal(),
+                new OracleCustomerDal()
+            };
+
+            foreach (var customerDal in customerDals)
+            {
+                customerDal.Add();
+            }
+
             Console.ReadLine();
         }
     }
