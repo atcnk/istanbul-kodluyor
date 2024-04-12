@@ -10,14 +10,18 @@ namespace Interfaces
     {
         static void Main(string[] args)
         {
-            PersonManager personManager = new PersonManager();
-            Customer customer = new Customer
-            {
-                Id = 1,
-                FirstName = "Engin",
-                LastName = "Demirog"
-            };
-            personManager.Add(customer);
+            //PersonManager personManager = new PersonManager();
+            //Customer customer = new Customer
+            //{
+            //    Id = 1,
+            //    FirstName = "Engin",
+            //    LastName = "Demirog"
+            //};
+            //personManager.Add(customer);
+
+            CustomerManager customerManager = new CustomerManager();
+            customerManager.Add(new OracleCustomerDal());
+            Console.ReadLine();
         }
     }
 
