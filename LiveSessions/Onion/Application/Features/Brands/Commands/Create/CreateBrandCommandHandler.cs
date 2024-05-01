@@ -5,6 +5,7 @@
  */
 
 using Application.Repositories;
+using AutoMapper;
 using Domain.Entities;
 using MediatR;
 
@@ -17,18 +18,17 @@ namespace Application.Features.Brands.Commands.Create
          */
 
         private readonly IBrandRepository _brandRepository;
+        private readonly IMapper _mapper;
 
-        public CreateBrandCommandHandler(IBrandRepository brandRepository)
+        public CreateBrandCommandHandler(IBrandRepository brandRepository, IMapper mapper)
         {
             _brandRepository = brandRepository;
+            _mapper = mapper;
         }
 
         public async Task<CreateBrandResponse> Handle(CreateBrandCommand request, CancellationToken cancellationToken)
         {
-            Brand brand = new()
-            {
-                Name = request.Name
-            };
+            Brand brand = _mapper.Map<Brand>(request);
             await _brandRepository.AddAsync(brand);
             // mapper entegrasyonu olmadigi icin bu sekilde gonderdik.
             return new CreateBrandResponse() { Id =brand.Id, Name = brand.Name};
