@@ -5,6 +5,7 @@ from products p
 join suppliers s on p.supplier_id = s.supplier_id
 where p.units_in_stock < 1;
 
+
 -- 27. 1998 yılı mart ayındaki siparişlerimin adresi, siparişi alan çalışanın adı, çalışanın soyadı
 
 select o.order_id, o.ship_address, e.first_name, e.last_name, o.order_date
