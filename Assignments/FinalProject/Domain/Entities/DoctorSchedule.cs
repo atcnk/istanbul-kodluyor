@@ -8,6 +8,6 @@ namespace Domain.Entities
         public DateTime StartTime {  get; set; }
         public DateTime EndTime {  get; set; }
         public int DoctorId { get; set; }
-        public virtual User Doctor { get; set; }
+        public virtual Doctor Doctor { get; set; }
     }
 }

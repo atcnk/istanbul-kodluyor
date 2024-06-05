@@ -8,6 +8,6 @@ namespace Domain.Entities
         public ActionType ActionType { get; set; }
         public string ActionDetails { get; set; }
         public int AdminId { get; set; }
-        public virtual User Admin { get; set; }
+        public virtual Admin Admin { get; set; }
     }
 }

@@ -1,5 +1,4 @@
 ﻿using Core.DataAccess;
-using Domain.Enums;
 
 namespace Domain.Entities
 {
@@ -11,6 +10,7 @@ namespace Domain.Entities
         public string Password { get; set; }
         public string PhoneNumber { get; set; }
         public string Address { get; set; }
-        public UserRole UserRole { get; set; }
+        public virtual ICollection<Notification> Notifications { get; set; }
+        public virtual ICollection<Feedback> Feedbacks { get; set; }
     }
 }
