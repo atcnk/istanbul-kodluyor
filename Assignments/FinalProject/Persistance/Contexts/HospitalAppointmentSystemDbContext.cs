@@ -1,7 +1,7 @@
 ﻿using Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace Persistance.Contexts
+namespace Persistence.Contexts
 {
     public class HospitalAppointmentSystemDbContext : DbContext
     {
